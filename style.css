@@ -64,7 +64,7 @@
         align-items: center;
     }
 
-    form input {
+    .search {
         width: 10em !important;
         /* font-size: 1em !important;
         padding: .3em !important; */
