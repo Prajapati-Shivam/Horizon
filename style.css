@@ -52,6 +52,12 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .collection-image img{
+        width: 400px !important;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .nav-bar {
         width: 100% !important;
@@ -509,7 +515,6 @@ footer {
 .collection-image {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(600px, 1fr));
-    width: 100%;
     margin: 2em 0;
 }
 
