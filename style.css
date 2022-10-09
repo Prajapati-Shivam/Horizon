@@ -116,8 +116,8 @@ body {
 
     .cart-item-remove {
       position: absolute;
-      bottom: 160px;
-      left: 160px;
+      top: 15px;
+      right: 15px;
     }
 
     #cart-quantity {
