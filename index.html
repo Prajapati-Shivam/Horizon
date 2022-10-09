@@ -2,316 +2,297 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce website</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce website</title>
+  <link rel="stylesheet" href="style.css">
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <script src="https://kit.fontawesome.com/1fb5b48ec8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  <script src="https://kit.fontawesome.com/1fb5b48ec8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="nav-bar">
-        <span class="brand">
+  <div class="nav-bar">
+    <span class="brand">
+      <i class="fa-brands fa-gg-circle"></i>
+      <h1 class="nav-header">Horizon.</h1>
+    </span>
+    <ul>
+      <li>
+        <a href="index.html" class="select"><i class="fa-solid fa-house"></i><span class="navbar-text">Home</span></a>
+      </li>
+      <li>
+        <a href="collection.html"><i class="fa-solid fa-list-ul"></i><span class="navbar-text">Collection</span></a>
+      </li>
+      <li>
+        <a href="login.html"><i class="fa-solid fa-circle-user"></i><span class="navbar-text">Login</span></a>
+      </li>
+      <li>
+        <a href="cart.html"><i class="fa-solid fa-shopping-cart"></i><span class="navbar-text">Cart</span></a>
+      </li>
+    </ul>
+    <form action="">
+      <input class="search" type="search" name="search" placeholder="Search...">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </form>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html" class="focus"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span></a>
+    <a href="collection.html"><i class="fa-solid fa-list-ul"></i><span class="nav-text">Collection</span></a>
+    <a href="login.html"><i class="fa-solid fa-lock"></i><span class="nav-text">Login</span></a>
+    <a href="cart.html"><i class="fa-solid fa-shopping-cart"></i><span class="nav-text">Cart</span></a>
+  </div>
+
+
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="https://ecommercee.vercel.app/banners/banner1.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://ecommercee.vercel.app/banners/banner2.jpg">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://ecommercee.vercel.app/banners/banner3.jpg">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://ecommercee.vercel.app/banners/banner4.jpg">
+    </div>
+  </div>
+
+  <div class="dot-container" style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div id="main">
+    <section class="section men-clothing">
+      <h2 class="section-title">Men's Clothing</h2>
+      <div class="row">
+        <div class="column" onclick="setProductInfo()">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column" onclick="setProductInfo()">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section women-clothing">
+      <h2 class="section-title">Women's Clothing</h2>
+      <div class="row">
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section electronics">
+      <h2 class="section-title">Electronics</h2>
+      <div class="row">
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section jewellery">
+      <h2 class="section-title">Jewellery</h2>
+      <div class="row">
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+        <div class="column">
+          <div class="product-image">
+            <img src="" alt="">
+          </div>
+          <p class="product-name"></p>
+          <span class="product-price"></span>
+          <button type="submit" class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer>
+    <span class="social-networks">
+      <h3>Connnect with us on Social networks:</h3>
+      <span class="icons">
+        <i class="fa-brands fa-google-plus-g"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </span>
+    </span>
+
+    <div class="main-footer">
+      <div class="footer-row">
+        <div class="footer-column">
+          <span class="brand-logo ">
             <i class="fa-brands fa-gg-circle"></i>
             <h1 class="nav-header">Horizon.</h1>
-        </span>
-        <ul>
-            <li>
-                <a href="index.html" class="select"><i class="fa-solid fa-house"></i><span class="navbar-text">Home</span></a>
-            </li>
-            <li>
-                <a href="collection.html"><i class="fa-solid fa-list-ul"></i><span class="navbar-text">Collection</span></a>
-            </li>
-            <li>
-                <a href="login.html"><i class="fa-solid fa-circle-user"></i><span class="navbar-text">Login</span></a>
-            </li>
-            <li>
-                <a href="cart.html"><i class="fa-solid fa-shopping-cart"></i><span class="navbar-text">Cart</span></a>
-            </li>
-        </ul>
-        <form action="">
-            <input class="search" type="search" name="search" placeholder="Search...">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </form>
-    </div>
-
-    <div class="bottom-nav">
-        <a href="index.html" class="focus"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span></a>
-        <a href="collection.html"><i class="fa-solid fa-list-ul"></i><span class="nav-text">Collection</span></a>
-        <a href="login.html"><i class="fa-solid fa-lock"></i><span class="nav-text">Login</span></a>
-        <a href="cart.html"><i class="fa-solid fa-shopping-cart"></i><span class="nav-text">Cart</span></a>
-    </div>
-
-
-
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="https://ecommercee.vercel.app/banners/banner1.jpg">
+          </span>
+          <span class="about">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis cum voluptatem explicabo aspernatur!
+              Assumenda dicta necessitatibus ducimus vero!
+            </p>
+          </span>
         </div>
-
-        <div class="mySlides fade">
-            <img src="https://ecommercee.vercel.app/banners/banner2.jpg">
-
+        <div class="footer-column">
+          <h3 class="row-title">Product</h3>
+          <a href="">Fashion</a>
+          <a href="">Household</a>
+          <a href="">Electronics</a>
+          <a href="">Kitchen</a>
         </div>
-
-        <div class="mySlides fade">
-            <img src="https://ecommercee.vercel.app/banners/banner3.jpg">
-
+        <div class="footer-column">
+          <h3 class="row-title">Useful links</h3>
+          <a href="">Pricing</a>
+          <a href="">Order</a>
+          <a href="">Setting</a>
+          <a href="">Help</a>
         </div>
-
-        <div class="mySlides fade">
-            <img src="https://ecommercee.vercel.app/banners/banner4.jpg">
+        <div class="footer-column">
+          <h3 class="row-title">Contacts</h3>
+          <a href="">Knowhere, KW 0101</a>
+          <a href="">info@example</a>
+          <a href="">+91 999 888 777</a>
+          <a href="">+01 987 765 654</a>
         </div>
+      </div>
     </div>
-
-    <div class="dot-container" style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-
-    <div class="main">
-        <section class="section men-clothing">
-            <h2 class="section-title">Men's Clothing</h2>
-            <div class="row">
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Casual T-shirt</p>
-                    <span class="product-price">₹ 2000</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Casual Slim-fit</p>
-                    <span class="product-price">₹ 3500</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Fjallraven</p>
-                    <span class="product-price">₹ 4999</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Cotten Jacket</p>
-                    <span class="product-price">₹ 3900</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="section women-clothing">
-            <h2 class="section-title">Women's Clothing</h2>
-            <div class="row">
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Women T-shirt</p>
-                    <span class="product-price">₹ 999</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Women T-shirt</p>
-                    <span class="product-price">₹ 799</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Women Short-sleeve</p>
-                    <span class="product-price">₹ 699</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" alt="">
-                    </div>
-                    <p class="product-name">Rain Jacket</p>
-                    <span class="product-price">₹ 2900</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="section electronics">
-            <h2 class="section-title">Electronics</h2>
-            <div class="row">
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Acer SB220Q</p>
-                    <span class="product-price">₹ 22000</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Samsung 49-Inch Monitor</p>
-                    <span class="product-price">₹ 63500</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" alt="">
-                    </div>
-                    <p class="product-name">WD 4TB Gaming Drive</p>
-                    <span class="product-price">₹ 8999</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="">
-                    </div>
-                    <p class="product-name">WD 2TB Elements Portable</p>
-                    <span class="product-price">₹ 5000</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="section jewellery">
-            <h2 class="section-title">Jewellery</h2>
-            <div class="row">
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Women's Bracelet</p>
-                    <span class="product-price">₹ 6000</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Solid gold ring</p>
-                    <span class="product-price">₹ 10500</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Gold plated Ear-ring</p>
-                    <span class="product-price">₹ 2299</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-                <div class="column">
-                    <div class="product-image">
-                        <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt="">
-                    </div>
-                    <p class="product-name">Diamond ring</p>
-                    <span class="product-price">₹ 53900</span>
-                    <button type="submit" class="btn">Add to Cart</button>
-                </div>
-            </div>
-        </section>
-    </div>
-
-
-    <footer>
-        <span class="social-networks">
-            <h3>Connnect with us on Social networks:</h3>
-            <span class="icons">
-                <i class="fa-brands fa-google-plus-g"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-twitter"></i>
-            </span>
-        </span>
-
-        <div class="main-footer">
-            <div class="footer-row">
-                <div class="footer-column">
-                    <span class="brand-logo ">
-                        <i class="fa-brands fa-gg-circle"></i>
-                        <h1 class="nav-header">Horizon.</h1>
-                    </span>
-                    <span class="about">
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis cum voluptatem explicabo aspernatur! Assumenda dicta necessitatibus ducimus vero!
-                        </p>
-                    </span>
-                </div>
-                <div class="footer-column">
-                    <h3 class="row-title">Product</h3>
-                    <a href="">Fashion</a>
-                    <a href="">Household</a>
-                    <a href="">Electronics</a>
-                    <a href="">Kitchen</a>
-                </div>
-                <div class="footer-column">
-                    <h3 class="row-title">Useful links</h3>
-                    <a href="">Pricing</a>
-                    <a href="">Order</a>
-                    <a href="">Setting</a>
-                    <a href="">Help</a>
-                </div>
-                <div class="footer-column">
-                    <h3 class="row-title">Contacts</h3>
-                    <a href="">Knowhere, KW 0101</a>
-                    <a href="">info@example</a>
-                    <a href="">+91 999 888 777</a>
-                    <a href="">+01 987 765 654</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="copy">
-        <p>&copy;Copyright - All rights reserved with <span class="bold">Shivam Prajapati</span></p>
-    </div>
-    <script>
-        let slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-
-    </script>
+  </footer>
+  <div class="copy">
+    <p>&copy;Copyright - All rights reserved with <span class="bold">Shivam Prajapati</span></p>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
